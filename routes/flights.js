@@ -6,18 +6,18 @@ const router = Router()
 /* GET users listing. */
 // GET localhost:3000/flights/index
 router.get('/', flightsCtrl.index)
-//GET localhost:3000/flights/new
 router.get('/new', flightsCtrl.new)
-
 router.get('/:id', flightsCtrl.show)
-
 router.get('/:id/edit', flightsCtrl.edit)
-//POST localhost:3000/flights
 router.post('/', flightsCtrl.create)
+router.post('/:id/tickets', flightsCtrl.createTicket)
+router.post('/:id/meals', flightsCtrl.addMeal)
 
-
-
+router.put("/:id", flightsCtrl.update)
 router.delete('/:id', flightsCtrl.delete)
+
+
 export {
-  router
+router
 }
+
