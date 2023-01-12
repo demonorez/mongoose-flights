@@ -1,10 +1,15 @@
 </head>
 <body>
   <nav>
-		<i class="fa-solid fa-plane-circle-check"></i>
+		<i class="fas fa-solid fa-plane-circle-check"></i>
     <a 
-      href="/flights/new" <%- title === 'Add Flight' ? 'class="active"' : '' %>
+    href="/flights/new" <%- title === 'Add Flight' ? 'class="active"' : '' %>
     >
-      ADD FLIGHT
-    </a>
+    ADD FLIGHT
+  </a>
+  <a 
+    href="/flights" <%- title === "All Flights" ? 'class-"active"' : "" %>
+    >
+    ALL FLIGHTS 
+</a>
   </nav>
